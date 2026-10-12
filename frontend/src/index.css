@@ -1,0 +1,59 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --font-sans: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    --font-mono: 'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+
+    --color-slate-50: #fffaf5;
+    --color-slate-100: #fff4e8;
+    --color-slate-200: #f4e4d5;
+    --color-slate-300: #e7d2bf;
+    --color-slate-400: #b29b86;
+    --color-slate-500: #86715e;
+    --color-slate-600: #665545;
+    --color-slate-700: #4c3b2c;
+    --color-slate-800: #33251a;
+    --color-slate-900: #21160e;
+    --color-slate-950: #140d08;
+
+    --color-indigo-50: #fff7ed;
+    --color-indigo-100: #ffedd5;
+    --color-indigo-200: #fed7aa;
+    --color-indigo-300: #fdba74;
+    --color-indigo-400: #fb923c;
+    --color-indigo-500: #f97316;
+    --color-indigo-600: #ea580c;
+    --color-indigo-700: #c2410c;
+    --color-indigo-800: #9a3412;
+    --color-indigo-900: #7c2d12;
+    --color-indigo-950: #431407;
+  }
+
+  body {
+    font-family: var(--font-sans);
+    color: #0f172a;
+    background-color: #f8fafc;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+}
+
+/* Custom scrollbar for data tables and chat */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f5f9;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #cbd5e1;
+  border-radius: 9999px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #94a3b8;
+}
